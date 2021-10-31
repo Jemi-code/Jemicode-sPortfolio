@@ -84,16 +84,18 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    overflow: hidden;
+    overflow:visible;
     background-color: rgb(5, 5, 37);
+    box-sizing: content-box;
 }
 
 .project-tile{
     padding: 10px 20px 10px 0;
-    margin: 30px;
-    width: 35%;
+    margin: 30px 0 30px 0;
+    width: 45%;
     border-radius: 20px;
     box-shadow: 0 10px 20px white;
+    box-sizing: border-box;
 }
 
 .project-tile > a{
@@ -114,6 +116,35 @@ main > p{
         flex-direction: column;
         padding-left: 25%;
     }
+
+    .project-tile{
+        width: 95%;
+    }
+}
+
+#extra{
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+#extra > li > a{
+    color: bisque;
+    text-decoration: none;
+}
+
+#extra > li > a:hover{
+    text-decoration: underline;
+    color: beige;
+}
+
+#extra > li{
+    padding: 10px;
+    list-style: none;
+}
+
+#extra > p{
+    font-size: large;
+    margin-bottom: 5%;
 }
 
 footer{
